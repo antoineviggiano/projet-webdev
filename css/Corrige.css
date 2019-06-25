@@ -335,4 +335,5 @@ input[type="email"]:valid ~ .input-validation::before {
         text-align: center;
         
     }
+    
 }

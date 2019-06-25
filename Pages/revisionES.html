@@ -18,31 +18,36 @@ and open the template in the editor.
 
     </head>
     <body>
-        <section id="banniere">
+       <section id="banniere">
             <h2 class="titre-cache">Titre</h2>
             <nav>
                 <input type="checkbox">
-                <img class="logobarre" src="../images/logobarre.png" alt="">
+                <img class="logobarre" src="../images/logobarre.png" alt="Petite calculatrice servant ">
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul>
-
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a>Calcule ta moyenne</a>
-                        <ul class="submenu">
-                            <li><a href="Calcul.html?bac=S">Bac s</a></li>
-                            <li><a href="Calcul.html?bac=ES">Bac es</a></li>
-                            <li><a href="Calcul.html?bac=L">Bac l</a></li>
+                        <input id="affiche-submenu1" type="checkbox">
+                        <ul class="submenu" id="submenuCalcul">
+                            <li><a href="Calcul.html?bac=S">Bac S</a></li>
+                            <li><a href="Calcul.html?bac=ES">Bac ES</a></li>
+                            <li><a href="Calcul.html?bac=L">Bac L</a></li>
                             <li><a href="Calcul.html?bac=STMG">Bac STMG</a></li>
                             <li><a href="Calcul.html?bac=STI2D">Bac STI2D</a></li>
-                        </ul></li>
+                        </ul>
+                        
+                    </li>
                     <li><a>Révisions</a>
-                        <ul class="submenu">
+                        <input id="affiche-submenu2" type="checkbox">
+                        <ul class="submenu" id="submenuRevision">
                             <li><a href="revisionS.html">Bac S</a></li>
                             <li><a href="revisionES.html">Bac ES</a></li>
                             <li><a href="revisionL.html">Bac L</a></li>
-                        </ul></li>
+                            
+                        </ul>
+                    </li>
                     <li><a href="Corrige.html">Ton corrigé</a></li>
                 </ul>
             </nav>
