@@ -298,3 +298,158 @@ nav li:hover .submenu{
       font-family: "Abecedary";
   }
  
+  
+  @media screen and (max-width:700px) {
+    body {
+        font-size: large;
+    }
+
+    header, section {
+        width: auto; /* Suppression de la largeur définie */
+    }
+
+    header img {
+        width: 100%; /* Bannière sur toute la largeur */
+        background-color: black; /* Extension artificielle noire */
+        padding-bottom: 15px; /* du bas de l'image sur 15 pixels */
+    }
+
+    nav {
+        /*display: block;*/
+        position: relative;
+        top: 7px;
+        left: 7px;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: flex; /* Ce conteneur est "flexible" */
+        flex-direction: column; /* Les éléments sont mis côte à côte */
+        align-items: flex-start; /* Alignement sur la gauche */
+        position: absolute;
+        margin: -39px 0 0 -60px;
+        padding: 50px 10px 10px 60px;
+        background: rgb(168, 169, 173);
+        list-style-type: none;
+        transform: translate(-150%, 0);
+        transition: transform 0.5s ease;
+    }
+
+    nav ul li {
+        display: list-item;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
+    nav input {
+        display: block; /* Affichage de l'input pour pouvoir cliquez dessus */
+        position: absolute;
+        opacity: 0; /* input transparent */
+        z-index: 2; /* On le place au-dessus du bouton de menu (hamburger) */
+    }
+
+    /* Création artificielle de l'icone de menu (hamburger) */
+    nav span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        background: black;
+        margin-left: 0px;
+        border-radius: 3px;
+        z-index: 1; /* En dessous de l'input défini avant */
+        /*transform-origin: 4px 0px; /* Modification du centre pour rotation */
+        transition: transform 0.5s ease, background 0.5s ease, opacity 0.55s ease;
+    }
+
+    /* Toutes les barres en blanc */
+    nav input:checked ~ span {
+        background: white;
+    }
+
+    /* On fait pivoter la première de 45° (sens horaire) */
+    nav input:checked ~ span:nth-child(3) {
+        transform: rotate(45deg) translate(7px, 5px);
+    }
+
+    /* On fait pivoter la dernière de 45° (sens anti-horaire) */
+    nav input:checked ~ span:nth-child(5) {
+        transform: rotate(-45deg) translate(10px, -6px);
+    }
+
+    /* On cache la barre du milieu */
+    nav input:checked ~ span:nth-child(4) {
+        opacity: 0; 
+    }
+
+    /* On annule la translation vers la gauche qui a caché le menu */
+    nav input:checked ~ ul {
+        transform: none;
+    }
+
+   
+    .logobarre{
+        display:none;
+    }
+    #banniere{
+        background-color: white;
+        margin-top: -10px;
+    }
+    #banniere nav{
+        margin-left: 0px;
+    }
+    #gauche{
+        display:none;
+    }
+    .services{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 139px;
+        margin-top: 36px;
+    }
+    h4, h3{
+        display: none;
+    }
+    .button{
+        margin:20px;
+        width: 150px;
+        height: 150px;
+    }
+    footer p {
+        font-size: 10px;
+        
+    }
+    footer{
+        height: 50px;
+    }
+    h2{
+        
+    margin-right: 0px;
+    margin-left: 150px;
+    color: red;
+    font-size:30px;
+    margin-top:-70px;
+
+    }
+    #simulateur{
+       margin-top: -90px;
+
+    }
+    .matieres{
+        
+    width: 176%;
+    margin-left: -36%;
+    }
+    .matiere-entete{
+        display:none;
+    }
+    .coeffValue{
+        margin-left: -5px;
+    }
+    #resultat{
+        font-size: 15px;
+    }
+}
