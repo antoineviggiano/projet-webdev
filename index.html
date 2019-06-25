@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="FR">
+    <head>
+        <title>Moyenne Du Bac!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Loïc FARACE">
+        <meta name="description" content="Calculez et évaluez votre moyenne et votre mention au bac à partir des notes à chaque épreuve, en tenant compte des coefficients, options et spécialités! De plus nous proposons également des corrections personnalisées.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/petitlogo.png">
+    </head>
+    
+    <body>
+        <div id="banniere">
+            <nav>
+                <input type="checkbox">
+                <img class="logobarre" src="images/logobarre.png" alt="Petite calculatrice servant ">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Pages/Calcul.html?bac=S">Calcule ta moyenne</a>
+                        <ul class="submenu">
+                            <li><a href="Pages/Calcul.html?bac=S">Bac S</a></li>
+                            <li><a href="Pages/Calcul.html?bac=ES">Bac ES</a></li>
+                            <li><a href="Pages/Calcul.html?bac=L">Bac L</a></li>
+                            <li><a href="Pages/Calcul.html?bac=STMG">Bac STMG</a></li>
+                            <li><a href="Pages/Calcul.html?bac=STI2D">Bac STI2D</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li><a href="Pages/revisionS.html">Révisions</a>
+                        <ul class="submenu">
+                            <li><a href="Pages/revisionS.html">Bac S</a></li>
+                            <li><a href="Pages/revisionES.html">Bac ES</a></li>
+                            <li><a href="Pages/revisionL.html">Bac L</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="Pages/Corrige.html">Ton corrigé</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="container-principal">
+            <section id="gauche">
+                <img src="images/logo4.png" alt="Logo présent au centre de la page d'accueil reprédentant un cahier avec un chapeau posé dessus."/>
+            </section>
+            
+            <section id="droite">
+                <section class="bloc-info">
+                    <h2>Calcule ta moyenne,</h2>
+                    <h1>Quelque soit ta filière !</h1>
+                    <section class="services">
+                        
+                        <!--****************************
+                        Bouton calculer sa moyenne
+               ****************************************-->
+                        <section class="button">
+                            <a href="Pages/Calcul.html?bac=S" target="_self" role="button" class="style-button"><span class="style-button">Calcul</span></a>
+                            <section class="logo-button">
+                                <img src="images/calculator.png" alt="Le logo représente une calculette positionné à côté du bouton permettant d'acceder à la page de calcul"/>
+                            </section>
+                        </section>
+                        
+                         <!--****************************
+                        Bouton révision 
+               ****************************************-->
+                        <section class="button" id="cercle2">
+                            <a href="Pages/revisionS.html" target="_self" role="button" class="style-button"><span class="style-button">Révisions</span></a>
+                            <section class="logo-button">
+                                <img src="images/books.png" alt="Le logo représente trois livres empilés. Le logo est positionné à côté du bouton permettant d'accéder à la page de révision"/>
+                            </section>
+                        </section>
+                        
+                          <!--****************************
+                        Bouton obtenir son corrigé
+               ****************************************-->
+                        <section class="button" id="cercle3">
+                            <a href="Pages/Corrige.html" target="_self" role="button" class="style-button"><span class="style-button">Corrigé</span></a>
+                           
+                           <section class="logo-button">
+                                <img src="images/copywriting.png" alt="Le logo représente une feuille de cours avec une main qui écrit dessus."/>
+                            </section>
+                        </section>
+                    </section>
+                    
+                    <section class="slogan">
+                        <h3>Mets toutes les chances de ton côté</h3>
+                        <h4>Pour passer un bon été !</h4>
+                    </section>
+                </section>
+                
+            </section>
+            
+        </section>
+        <footer>
+            <p>&copy;2019 Calcule Ta Moyenne - Créé par Farace Loic, Le Ny Pierre & Viggiano Antoine<p>
+        </footer>
+        
+        
+    </body>
+</html>

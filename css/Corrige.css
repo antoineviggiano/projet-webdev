@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 juin 2019, 10:45:45
+    Author     : Loic
+*/
+
+@font-face{ 
+    font-family: "Abecedary";
+    src: url('../Police/Abecedary.ttf') format("truetype");
+    
+}
+
+#banniere{
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    padding-top: 16px;
+    background:#a8a9ad;
+}
+.logobarre{
+    display: flex;
+    position: relative;
+    left: 150px;
+}
+h1{
+    margin-top:100px;
+    color:#fe595f;
+}
+
+#motif div label{
+        margin-left: -1px;
+
+}
+
+p{
+    color: #ffbc14;
+    font-size: 25px;
+    margin-top: -30px;
+}
+footer p{
+    color:white;
+    margin-top:10px;
+}
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 20px;
+    width: 205px;
+    color: black;
+    font-family: "Abecedary";
+
+}
+
+
+#contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    padding-top:20px;
+    flex-direction: column;
+}
+
+
+
+#contact h1 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#Calcul{
+    margin-top: 5px;
+}
+
+#contact form fieldset {
+    
+    padding: 10px;
+}
+
+#coordo legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+#coordo label {
+    margin-right: 10px;
+}
+
+#coordo input, #coordo select {
+    flex: 1;
+}
+
+#coordo div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#coordo input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#coordo #marques label {
+    text-transform: capitalize;
+}
+
+#coordo fieldset {
+    width: fit-content;
+    margin: auto;
+}
+
+#motif {
+    align-self: flex-start;
+}
+
+#motif legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+#motif div {
+    margin: 10px;
+}
+
+#motif label {
+    margin-left: 10px;
+}
+
+#controles {
+    margin-top: 10px;
+        display: flex;
+   padding-bottom: 20px;
+    justify-content: center;
+
+}
+
+#cercle1{
+    margin:auto;
+    width: 91px;
+    height: 51px;
+  border-radius: 0;
+}
+
+#controles input {
+    padding: 10px;
+}
+
+#controles input:first-child {
+    margin-right: 10px;
+}
+
+input:valid, :not(input[type="submit"]) {
+    color: green;
+}
+input:invalid {
+    color: red;
+}
+
+#coordo div.input-validation {
+    margin: 0;
+}
+
+input[type="text"]:valid ~ .input-validation::before,
+input[type="email"]:valid ~ .input-validation::before {
+    content: "✔";
+    margin-left: 5px;
+    color: green;
+}
+
+@media screen and (max-width:576px) {
+    #motif {
+        margin-top: 20px;
+    }
+}
+
+
+.primary-button{
+    width: 220px;
+    min-height: 33px;
+    display: block;
+    border-radius: 20px;
+    transition: all .25s ease-in-out;
+    text-align: center;
+    line-height: 2.2em;
+    
+    cursor: pointer;
+    background: #ffca42;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.45em;
+    font-weight: normal;
+    margin-top:20px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Moyenne Du Bac!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Loïc FARACE">
+        <meta name="description" content="Calculez et évaluez votre moyenne et votre mention au bac à partir des notes à chaque épreuve, en tenant compte des coefficients, options et spécialités! De plus nous proposons également des corrections personnalisées.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/Calcul.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="../images/petitlogo.png">
+        <script  src="../js/data.js"></script>
+        <script  src="../js/script.js"></script>
+
+    </head>
+    <body>
+        <div id="banniere">
+            <nav>
+                <input type="checkbox">
+                <img class="logobarre" src="../images/logobarre.png" alt="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="Calcul.html?bac=S">Calcule ta moyenne</a>
+                        <ul class="submenu">
+                            <li><a href="Calcul.html?bac=S">Bac S</a></li>
+                            <li><a href="Calcul.html?bac=ES">Bac ES</a></li>
+                            <li><a href="Calcul.html?bac=L">Bac L</a></li>
+                            <li><a href="Calcul.html?bac=STMG">Bas STMG</a></li>
+                            <li><a href="Calcul.html?bac=STI2D">Bac STI2D</a></li>
+
+                        </ul></li>
+                    <li><a href="revisionS.html">Révisions</a>
+                        <ul class="submenu">
+                            <li><a href="revisionS.html">Bac S</a></li>
+                            <li><a href="revisionES.html">Bac ES</a></li>
+                            <li><a href="revisionL.html">Bac L</a></li>
+                        </ul></li>
+                    <li><a href="Corrige.html">Ton corrigé</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="title">
+            <h1>Calculez votre moyenne au Bac <span id="title-bac"></span> 2019</h1>
+        </section>
+
+        <form id="simulateur" name="simulateur"  method="POST">
+
+            <!--**************************
+            Epreuves Anticipes
+    ******************************************-->
+            <div id="epreuvesAnticipees" class="epreuve">
+                <h1 class="titre-type-epreuve">Epreuves Anticipées</h1>
+                <div class="matiere-body">
+                    <div class="matiere-entete"></div>
+                    <div class="matieres"></div>
+                </div>
+            </div>
+
+            <!--**************************
+            Epreuves Terminales
+    ******************************************-->
+            <div id="epreuvesTerminale" class="epreuve">
+                <h1 class="titre-type-epreuve">Epreuves de Terminale</h1>
+                <div class="matiere-body">
+                    <div class="matiere-entete"></div>
+                    <div class="matieres"></div>
+                </div>
+            </div>
+            <!--**************************
+            Epreuves Facultatives
+    ******************************************-->
+            <div id="epreuvesFacultatives">
+                <h1 class="titre-type-epreuve">Epreuves Facultatives</h1>
+                <div class="matiere-body">
+                    <div class="matiere-entete"></div>
+                    <div class="matieres"></div>
+                </div>
+            </div>
+            <!--*******************************
+            Bouton Calculer
+    **************************************-->  
+            <input class="primary-button" type ="button" value="Calculer" onclick="calculateNoteBac()" id="calculate-note">
+            <div>
+                <label id="resultat"></label> 
+            </div>
+
+        </form>
+
+        <footer>
+            <p>&copy;2019 Calcule Ta Moyenne - Créé par Farace Loic, Pierre Le Ny & Antoine Viggiano<p>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="FR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Moyenne Du Bac!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Loïc FARACE">
+        <meta name="description" content="Calculez et évaluez votre moyenne et votre mention au bac à partir des notes à chaque épreuve, en tenant compte des coefficients, options et spécialités! De plus nous proposons également des corrections personnalisées.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/Corrige.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="../images/petitlogo.png">
+
+    </head>
+    <body>      
+        <div id="banniere">
+            <nav>
+                <input type="checkbox">
+                <img class="logobarre" src="../images/logobarre.png" alt="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="Calcul.html?bac=S">Calcule ta moyenne</a>
+                        <ul class="submenu">
+                            <li><a href="Calcul.html?bac=S">Bac S</a></li>
+                            <li><a href="Calcul.htmlbac=ES">Bac ES</a></li>
+                            <li><a href="Calcul.html?bac=L">Bac L</a></li>
+                            <li><a href="Calcul.html?bac=STMG">Bac STMG</a></li>
+                            <li><a href="Calcul.html?bac=STI2D">Bac STI2D</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="revisionS.html">Révisions</a>
+                        <ul class="submenu">
+                            <li><a href="revisionS.html">Bac S</a></li>
+                            <li><a href="revisionES.html">Bac ES</a></li>
+                            <li><a href="revisionL.html">Bac L</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Corrige.html">Ton corrigé</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Obtients ton corrigé gratuitement !</h1>
+        <p>Pour cela, choisis ta matière, pose nous toutes tes questions et tu auras ta correction personnalisée ! </p>
+
+        <section id="contact">
+            <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
+                <fieldset id="coordo">
+                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
+                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
+                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
+                    <div><label for="piece_jointe">Piece jointe :</label><input type="file" name="piece_jointe" id="piece_jointe" /> </div>
+                    <div>
+                        <label for="lst_typeclient">Votre Matière:</label>
+                        <select name="lst_typeclient" id="lst_typeclient">
+                            <option value="1">Maths</option>
+                            <option value="2">Physiques</option>
+                            <option value="3">SVT</option>
+                            <option value="4">Francais</option>
+                            <option value="5">Anglais</option>
+                            <option value="6">Espagnol</option>
+                            <option value="7">Philosophie</option>
+                        </select>
+                    </div>
+                    <section id="motif">
+
+                        <div><label for="area_precisions">Posez Vos Questions:</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                    </section>
+                </fieldset>
+
+                <div id="controles"><input type="submit" id="btn_envoyer" class="primary-button" name="sub_envoyer" value="Envoyer"></div>
+
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy;2019 Calcule Ta Moyenne - Créé par Farace Loic, Pierre Le Ny & Antoine Viggiano<p>
+        </footer>
+
+    </body>
+</html>

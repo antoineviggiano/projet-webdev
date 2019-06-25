@@ -1,0 +1,329 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 juin 2019, 19:40:37
+    Author     : Loic
+*/
+
+* {
+    font-family: 'Cursive'; /* Police par défaut */
+    margin: 0; /* Mise à 0 des marges externes */
+    padding: 0; /* Mise à 0 des marges internes */
+    text-decoration: none; 
+
+}
+
+/* Définition de la police "Cursive" */
+@font-face{ 
+    font-family: "Cursive";
+    src: url('../Police/Cursive.ttf') format("truetype");
+
+
+}
+/* Définition de la police "Abecedary" */
+@font-face{ 
+
+    font-family: "Abecedary";
+    src: url('../Police/Abecedary.ttf') format("truetype");
+
+
+}
+
+
+
+body {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%; /* La page occupe toute la largeur */
+}
+
+/*********************************************
+            * Banniere
+ *********************************************/
+#banniere{
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    padding-top: 16px;
+    background:#a8a9ad;
+}
+
+.logobarre{
+    display: flex; /* Ce conteneur est "flexible" */
+    position: relative;
+    left: 150px;
+    margin-left: -300px;
+    background: transparent;
+    margin-top: -30px;
+}
+
+
+
+/*********************************************
+            * Sous menu de la barre
+ *********************************************/
+.submenu{
+    display:none;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position:absolute;
+    top:215px;
+
+
+}
+
+
+.submenu li a {
+    padding: 15px 30px;
+    font-family: "Abecedary";
+    font-size: 20px;
+    width: 205px;
+    color: black;
+
+
+}
+
+/*********************************************
+            * Menu Principal
+ *********************************************/
+nav ul li {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    list-style-type: none; /* Cette liste n'a pas de puce */
+    font-size: x-large; /* Le texte est grossi en XL */
+    flex-grow: 1; /* L'espace occupé est élargie */
+
+}
+
+nav ul li a {
+    padding: 10px; /* Marge intérieure */
+    color: white; /* Couleur du texte */
+    padding-right: 50px;
+}
+
+ul li a {
+    font-size: 30px;
+
+}
+
+nav input {
+    display: none;
+}
+a{
+    color: #FFFFFF;
+    background:#a8a9ad;
+
+}
+nav {
+    margin-left: 200px;
+    z-index:10;
+}
+nav ul {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: row; /* Les éléments sont mis côte à côte */
+    justify-content: space-between; /* Les éléments sont répartis équitablement */ 
+    margin-top: -108px;
+
+
+}
+
+/*********************************************
+            * Bloc central de la page
+ *********************************************/
+
+.container-principal{
+    display:flex;
+    flex-direction: row;
+    margin-top: 45px;
+
+}
+#droite{
+    margin-top: 80px;
+    display:flex;
+    margin-left:-100px;
+}
+
+#gauche{
+    display:flex;
+    margin-top: 100px;
+    margin-right: 200px;
+
+}
+
+#gauche img{
+    height:590px;
+    margin-top:-69px;
+
+}
+
+/*********************************************
+            * Tous les titres
+ *********************************************/
+h2{
+    font-size:70px;
+    color:#8c8b8b;
+}
+h1{
+    font-size:40px;
+    color:#8c8b8b;
+    margin-bottom:50px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.4em;
+    color:#8c8b8b;
+
+}
+h4{
+    font-size: 24px;
+    line-height: 1.4em;
+    color:#ffcb4e;
+}
+
+/*********************************************
+            * Bouttons en forme de cercle
+ *********************************************/
+.style-button{
+    color:#8c8b8b;;
+    background: transparent;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size:20px;
+
+}
+
+.logo-button img{
+    background-color: white;
+}
+.button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-width: 6px;
+    border-color: #EA8024;
+    border-style:solid;
+    margin-right:30px;
+    position : relative;
+
+}
+
+
+#cercle2 {
+
+    border-color: #EA7F24;
+    margin-left:40px;
+    margin-right:40px;
+
+}
+#cercle3 {
+
+    border-color: #F7C80D;
+    margin-left:40px;
+
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+
+.logo-button{
+    position:  absolute;
+    display: flex;
+    top:  -40px;
+    left: -20px;
+
+
+}
+/*********************************************
+            * Texte
+ *********************************************/
+
+.slogan{
+    margin-top: 40px;
+}
+/*********************************************
+            * Pied de page
+ *********************************************/
+
+footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+    width: 100%;
+    background-color:#1ed0c2;
+    margin-top: 25px;
+
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/*********************************************
+            * Adaptation pour smartphones et tablettes
+ *********************************************/
+
+
+@media only screen and (max-width:700px) {
+    #banniere{
+        background:transparent;
+    }
+    ul{
+        background-color:#a8a9ad;
+    }
+    nav{
+        display:block;
+        margin-left:0;
+        width:250%;
+    }
+    #gauche {
+        display:none;
+    }
+    #droite{
+        position:absolute;
+        margin:0;
+        width:200%;
+        margin-top:50px;
+    }
+    .services {
+        flex-direction:column;
+        width:100%; 
+        align-items:center;
+    }
+    footer{
+        bottom:0;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        right: 0;
+        font-size: 25px;
+    }
+    .button{
+        width:240px;
+        height:240px;
+        margin:20px;
+    }
+    .style-button{
+        font-size:50px;
+        margin-bottom:0;
+    }
+    .slogan h3,h4{
+        font-size:40px !important;
+    }
+}
