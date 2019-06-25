@@ -31,7 +31,7 @@ h1{
     color:#fe595f;
 }
 
-#motif div label{
+#motif section label{
         margin-left: -1px;
 
 }
@@ -94,7 +94,7 @@ footer p{
     flex: 1;
 }
 
-#coordo div {
+#coordo section {
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -122,7 +122,7 @@ footer p{
     font-weight: bold;
 }
 
-#motif div {
+#motif section {
     margin: 10px;
 }
 
@@ -160,7 +160,7 @@ input:invalid {
     color: red;
 }
 
-#coordo div.input-validation {
+#coordo section.input-validation {
     margin: 0;
 }
 

@@ -29,6 +29,13 @@ and open the template in the editor.
     position: relative;
     left: 150px;
 }
+h3{
+    color:#fe595f;
+    text-align:center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    
+}
 h1{
     color:#fe595f;
     text-align:center;

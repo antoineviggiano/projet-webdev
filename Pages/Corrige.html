@@ -18,7 +18,8 @@ and open the template in the editor.
 
     </head>
     <body>      
-        <div id="banniere">
+        <section id="banniere">
+            <h2 class="titre-cache">Titre</h2>
             <nav>
                 <input type="checkbox">
                 <img class="logobarre" src="../images/logobarre.png" alt="">
@@ -47,18 +48,20 @@ and open the template in the editor.
                     <li><a href="Corrige.html">Ton corrigé</a></li>
                 </ul>
             </nav>
-        </div>
-        <h1>Obtients ton corrigé gratuitement !</h1>
+        </section>
+        <h1>Obtiens ton corrigé gratuitement !</h1>
         <p>Pour cela, choisis ta matière, pose nous toutes tes questions et tu auras ta correction personnalisée ! </p>
 
         <section id="contact">
+            <h2 class="titre-cache">Titre</h2>
             <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
                 <fieldset id="coordo">
-                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
-                    <div><label for="piece_jointe">Piece jointe :</label><input type="file" name="piece_jointe" id="piece_jointe" /> </div>
-                    <div>
+                    <section><h2 class="titre-cache">Titre</h2><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><section class="input-validation"><h2 class="titre-cache">Titre</h2></section></section>
+                    <section><h2 class="titre-cache">Titre</h2><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><section class="input-validation"><h2 class="titre-cache">Titre</h2></section></section>
+                    <section><h2 class="titre-cache">Titre</h2><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><section class="input-validation"><h2 class="titre-cache">Titre</h2></section></section>
+                    <section><h2 class="titre-cache">Titre</h2><label for="piece_jointe">Piece jointe :</label><input type="file" name="piece_jointe" id="piece_jointe" /> </section>
+                    <section>
+                        <h2 class="titre-cache">Titre</h2>
                         <label for="lst_typeclient">Votre Matière:</label>
                         <select name="lst_typeclient" id="lst_typeclient">
                             <option value="1">Maths</option>
@@ -69,14 +72,14 @@ and open the template in the editor.
                             <option value="6">Espagnol</option>
                             <option value="7">Philosophie</option>
                         </select>
-                    </div>
+                    </section>
                     <section id="motif">
-
-                        <div><label for="area_precisions">Posez Vos Questions:</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></div>
+                         <h2 class="titre-cache">Titre</h2>
+                        <section><h2 class="titre-cache">Titre</h2><label for="area_precisions">Posez Vos Questions:</label><br><textarea name="area_precisions" id="area_precisions" cols="35" rows="10"></textarea></section>
                     </section>
                 </fieldset>
 
-                <div id="controles"><input type="submit" id="btn_envoyer" class="primary-button" name="sub_envoyer" value="Envoyer"></div>
+                <section id="controles"><h2 class="titre-cache">Titre</h2><input type="submit" id="btn_envoyer" class="primary-button" name="sub_envoyer" value="Envoyer"></section>
 
             </form>
         </section>

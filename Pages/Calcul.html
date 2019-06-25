@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="FR">
     <head>
-        <meta charset="UTF-8">
         <title>Moyenne Du Bac!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -16,7 +15,8 @@
 
     </head>
     <body>
-        <div id="banniere">
+        <section id="banniere">
+            <h2 class="titre-cache">Titre</h2>
             <nav>
                 <input type="checkbox">
                 <img class="logobarre" src="../images/logobarre.png" alt="">
@@ -44,9 +44,10 @@
                     <li><a href="Corrige.html">Ton corrigé</a></li>
                 </ul>
             </nav>
-        </div>
+        </section>
         <section id="title">
-            <h1>Calculez votre moyenne au Bac <span id="title-bac"></span> 2019</h1>
+            <h2 class="titre-cache">Titre</h2>
+            <h3>Calculez votre moyenne au Bac <span id="title-bac"></span> 2019</h3>
         </section>
 
         <form id="simulateur" name="simulateur"  method="POST">
@@ -54,41 +55,47 @@
             <!--**************************
             Epreuves Anticipes
     ******************************************-->
-            <div id="epreuvesAnticipees" class="epreuve">
+            <section id="epreuvesAnticipees" class="epreuve">
+                <h2 class="titre-cache">Titre</h2>
                 <h1 class="titre-type-epreuve">Epreuves Anticipées</h1>
-                <div class="matiere-body">
-                    <div class="matiere-entete"></div>
-                    <div class="matieres"></div>
-                </div>
-            </div>
+                <article class="matiere-body">
+                    <h2 class="titre-cache">Titre</h2>
+                    <section class="matiere-entete"><h2 class="titre-cache">Titre</h2></section>
+                    <section class="matieres"><h2 class="titre-cache">Titre</h2></section>
+                </article>
+            </section>
 
             <!--**************************
             Epreuves Terminales
     ******************************************-->
-            <div id="epreuvesTerminale" class="epreuve">
+            <section id="epreuvesTerminale" class="epreuve">
+                <h2 class="titre-cache">Titre</h2>
                 <h1 class="titre-type-epreuve">Epreuves de Terminale</h1>
-                <div class="matiere-body">
-                    <div class="matiere-entete"></div>
-                    <div class="matieres"></div>
-                </div>
-            </div>
+                <article class="matiere-body">
+                    <h2 class="titre-cache">Titre</h2>
+                    <section class="matiere-entete"><h2 class="titre-cache">Titre</h2></section>
+                    <section class="matieres"><h2 class="titre-cache">Titre</h2></section>
+                </article>
+            </section>
             <!--**************************
             Epreuves Facultatives
     ******************************************-->
-            <div id="epreuvesFacultatives">
+            <section id="epreuvesFacultatives">
                 <h1 class="titre-type-epreuve">Epreuves Facultatives</h1>
-                <div class="matiere-body">
-                    <div class="matiere-entete"></div>
-                    <div class="matieres"></div>
-                </div>
-            </div>
+                <article class="matiere-body">
+                    <h2 class="titre-cache">Titre</h2>
+                    <section class="matiere-entete"><h2 class="titre-cache">Titre</h2></section>
+                    <section class="matieres"><h2 class="titre-cache">Titre</h2></section>
+                </article>
+            </section>
             <!--*******************************
             Bouton Calculer
     **************************************-->  
             <input class="primary-button" type ="button" value="Calculer" onclick="calculateNoteBac()" id="calculate-note">
-            <div>
+            <section>
+                <h2 class="titre-cache">Titre</h2>
                 <label id="resultat"></label> 
-            </div>
+            </section>
 
         </form>
 

@@ -28,10 +28,10 @@ and open the template in the editor.
 h1{
     color:#fe595f;
     text-align:center;
-
+    
 }
 
-#motif div label{
+#motif section label{
     margin-left: -1px;
 
 }
@@ -109,7 +109,7 @@ nav li:hover .submenu{
     color:black;
     font-size: 30px;
 }
-.sujets div{
+.sujets section{
     text-align: center;
     border: solid;
     border-color: #ededed;
@@ -124,7 +124,7 @@ nav li:hover .submenu{
     margin-bottom: 10px;
 }
 
-.sujets div a:hover{
+.sujets section a:hover{
     background-color: grey;
     color:white;
     border-bottom-left-radius: 23px;
@@ -150,6 +150,9 @@ nav li:hover .submenu{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom: 0px;
+    padding-top: 10px;
+    text-align:center;
+    font-size: 40px;
 }
 
 
