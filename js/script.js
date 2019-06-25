@@ -174,7 +174,7 @@ function generateHtml(bac){
                     html += 'x <span class="coeffValue">'+dataBac[typeEpreuve][matiereKey]["coeff"]+'</span>\
                             </div>\
                             <div class="matiere-note">\
-                                <input type="number" min="0" max="20" size="3" value="10" />\
+                                <input type="number" min="0" max="20" size="3" value="10"  />\
                             </div>\
                         </div>';                     
             }                          

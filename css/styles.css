@@ -170,12 +170,14 @@ h2{
     font-size:70px;
     color:#8c8b8b;
 }
-h1{
+h4{
     font-size:40px;
     color:#8c8b8b;
     margin-bottom:50px;
 }
-
+#titre4 {
+    font-size: 48px !important;
+}
 h3 {
     font-size: 24px;
     line-height: 1.4em;
