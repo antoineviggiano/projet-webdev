@@ -118,7 +118,6 @@ var data = {
             }
         }
     },
-    
     "S" : {
         "epreuvesAnticipees":{
             "francaisEcrit":{

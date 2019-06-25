@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
     //On récupère le bac de l'URL
     var bac = getParameterURL("bac");
-    if(bac == null){
+    if(bac === null){
         alert("Votre bac n'est pas spécifié");
     }
 
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
  *  Fontion pour récupérer un parametre de l'URL
  *********************************************/
 function getParameterURL(parameter){
-    var urlString = window.location.href
-    var url = new URL(urlString);
-    var valueParameter = url.searchParams.get(parameter);
+    let urlString = window.location.href
+    let url = new URL(urlString);
+    let valueParameter = url.searchParams.get(parameter);
 
     return valueParameter;
 }
@@ -27,15 +27,15 @@ function getParameterURL(parameter){
  *  Fontion pour calculer la note du bac
  *********************************************/
 function calculateNoteBac(){
-    var matieres = document.getElementsByClassName("matiere");
+    let matieres = document.querySelectorAll(".matiere");
 
-    var somme = 0;
-    var sommeCoeff = 0;
-    var noteBac = 0;
+    let somme = 0;
+    let sommeCoeff = 0;
+    let noteBac = 0;
 
-    for (var i = 0; i < matieres.length; i++) {
-        var note = parseInt(matieres[i].querySelector(".matiere-note input").value);
-        var coeff = parseInt(matieres[i].querySelector(".coeffValue").innerHTML);
+    for (let i = 0; i < matieres.length; i++) {
+        let note = parseInt(matieres[i].querySelector(".matiere-note input").value);
+        let coeff = parseInt(matieres[i].querySelector(".coeffValue").innerHTML);
         somme += note * coeff;
         sommeCoeff += coeff;
     }
@@ -48,20 +48,20 @@ function calculateNoteBac(){
  *********************************************/
 function optionChange(id){
 
-    var currentElement = document.getElementById(id);
+    let currentElement = document.querySelector("#"+id);
 
-    var coeff = currentElement.selectedOptions[0].dataset.coeff; 
-    var coeffSpecialite = currentElement.selectedOptions[0].dataset.coeffspecialite; 
-    var typeExam = currentElement.selectedOptions[0].dataset.typeexam;
+    let coeff = currentElement.selectedOptions[0].dataset.coeff; 
+    let coeffSpecialite = currentElement.selectedOptions[0].dataset.coeffspecialite; 
+    let typeExam = currentElement.selectedOptions[0].dataset.typeexam;
 
-    var coeffElement = document.getElementById("matiere-coeff-"+id);
-    var typeExamElement = document.getElementById("matiere-typeExam-"+id);
+    let coeffElement = document.querySelector("#matiere-coeff-"+id);
+    let typeExamElement = document.querySelector("#matiere-typeExam-"+id);
 
-    var radioSpecialite = coeffElement.querySelector(".radioSpecialite"); 
+    let radioSpecialite = coeffElement.querySelector(".radioSpecialite"); 
 
 
     if(coeff != null && typeExam != null){
-        var coeffValue = coeffElement.querySelector(".coeffValue");
+        let coeffValue = coeffElement.querySelector(".coeffValue");
         coeffValue.innerHTML = coeff;
         typeExamElement.innerHTML = typeExam;
 
@@ -70,7 +70,7 @@ function optionChange(id){
             radioSpecialite.value = coeffSpecialite;
         }
     }else{
-        var coeffValue = coeffElement.querySelector(".coeffValue");
+        let coeffValue = coeffElement.querySelector(".coeffValue");
         coeffValue.innerHTML = 0;
         typeExamElement.innerHTML = "...";
 
@@ -85,17 +85,17 @@ function optionChange(id){
  *********************************************/
 function radioChange(element){
 
-    var coeffSpecialite = element.value;
-    var coeffContainerParentId = element.dataset.parent;
+    let coeffSpecialite = element.value;
+    let coeffContainerParentId = element.dataset.parent;
 
-    var coeffValue = document.getElementById(coeffContainerParentId).querySelector(".coeffValue");
+    let coeffValue = document.querySelector("#"+coeffContainerParentId).querySelector(".coeffValue");
     coeffValue.innerHTML = coeffSpecialite;
 
-    var radioElements = document.getElementsByClassName("radioSpecialite");
-    for (var i = 0; i < radioElements.length; i++) {
+    let radioElements = document.querySelectorAll(".radioSpecialite");
+    for (let i = 0; i < radioElements.length; i++) {
         if(radioElements[i].dataset.parent != coeffContainerParentId){
-            var coeff = radioElements[i].dataset.coeff;
-            var coeffValue = document.getElementById(radioElements[i].dataset.parent).querySelector(".coeffValue");
+            let coeff = radioElements[i].dataset.coeff;
+            let coeffValue = document.querySelector("#"+radioElements[i].dataset.parent).querySelector(".coeffValue");
             coeffValue.innerHTML = coeff;
         }
     }
@@ -105,17 +105,17 @@ function radioChange(element){
  *********************************************/
 function generateHtml(bac){
 
-    var dataBac = data[bac];
+    let dataBac = data[bac];
     
-    for(var typeEpreuve in dataBac){
+    for(let typeEpreuve in dataBac){
 
-        var typeEpreuveElement = document.getElementById(typeEpreuve);
+        let typeEpreuveElement = document.querySelector("#"+typeEpreuve);
 
         /******************************
          * Génération des entêtes
          ******************************/
 
-        var enteteContainer = typeEpreuveElement.querySelector(".matiere-entete");
+        let enteteContainer = typeEpreuveElement.querySelector(".matiere-entete");
 
         var html = '<div class="matiere-nom"></div> \
                     <div class="matiere-coeff">Coeff</div> \
@@ -126,9 +126,9 @@ function generateHtml(bac){
          * Génération des matières
          ******************************/
 
-        var matieresContainer = typeEpreuveElement.querySelector(".matieres");
+        let matieresContainer = typeEpreuveElement.querySelector(".matieres");
 
-        for(var matiereKey in dataBac[typeEpreuve]){
+        for(let matiereKey in dataBac[typeEpreuve]){
 
             if(dataBac[typeEpreuve][matiereKey]["select"]){
 
